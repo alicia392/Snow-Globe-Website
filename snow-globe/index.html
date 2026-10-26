@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowglobe ❄</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="background-snow"></div>
+
+  <header>
+    <a class="logo" href="#">❄ Snowglobe</a>
+    <span class="header-note">YOUR LITTLE WINTER WORLD ✧</span>
+    <button id="theme-button" class="icon-button" aria-label="Toggle night mode">☾</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <span class="eyebrow">A LITTLE WORLD</span>
+      <h1>Make a wish.<br><span>Let it snow.</span></h1>
+      <p>A tiny winter escape, made just for you.</p>
+      <button id="explore" class="pill-button">Explore the magic ✧</button>
+      <p class="hint">Psst... try clicking the snow globe!</p>
+    </section>
+
+    <section class="scene">
+      <div class="globe" id="globe" role="button" tabindex="0"
+           aria-label="Shake the snow globe">
+        <div class="sky"></div>
+        <div class="moon" id="moon">☾</div>
+        <div class="stars" id="stars">✦　·　✧　·　✦</div>
+
+        <div class="mountain mountain-one"></div>
+        <div class="mountain mountain-two"></div>
+
+        <div class="trees" id="trees">
+          <span class="tree tree-one">♠</span>
+          <span class="tree tree-two">♠</span>
+          <span class="tree tree-three">♠</span>
+          <span class="tree tree-four">♠</span>
+        </div>
+
+        <div class="lake"></div>
+        <div class="ground"></div>
+
+        <div class="house" id="house">
+          <div class="roof"></div>
+          <div class="house-body">
+            <span class="window window-one"></span>
+            <span class="window window-two"></span>
+            <span class="door"></span>
+          </div>
+        </div>
+
+        <div class="lamp" id="lamp">☼</div>
+        <div class="globe-snow" id="globe-snow"></div>
+        <div class="glass-shine"></div>
+        <div class="glass-edge"></div>
+      </div>
+
+      <div class="base">
+        <span>❄</span>
+        <div>SNOWGLOBE</div>
+        <small>A WORLD OF WONDER</small>
+      </div>
+
+      <p class="scene-caption" id="scene-caption">
+        A quiet night in a winter wonderland.
+      </p>
+    </section>
+
+    <section class="controls">
+      <div class="control-heading">
+        <span class="eyebrow">MAKE IT YOURS</span>
+        <button id="reset" class="reset-button">↻ Reset</button>
+      </div>
+
+      <div class="control-grid">
+        <button class="control active" id="snow-toggle">
+          <span class="control-icon">❄</span>
+          <span>Snow</span>
+          <span class="switch"></span>
+        </button>
+
+        <button class="control active" id="lights-toggle">
+          <span class="control-icon">☼</span>
+          <span>Lights</span>
+          <span class="switch"></span>
+        </button>
+
+        <button class="control active" id="rotate-toggle">
+          <span class="control-icon">⟳</span>
+          <span>Rotate</span>
+          <span class="switch"></span>
+        </button>
+      </div>
+
+      <p class="control-label">CHOOSE YOUR LITTLE WORLD</p>
+
+      <div class="world-options">
+        <button class="world active" data-world="winter">
+          <span>❄</span>Winter
+        </button>
+        <button class="world" data-world="night">
+          <span>☾</span>Midnight
+        </button>
+        <button class="world" data-world="dream">
+          <span>✧</span>Dream
+        </button>
+      </div>
+
+      <button id="wish-button" class="wish-button">
+        ✧ Make a little wish
+      </button>
+      <p id="wish-message" class="wish-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>Made of stardust, snowflakes & a little imagination ♡</footer>
+</body>
+</html>
